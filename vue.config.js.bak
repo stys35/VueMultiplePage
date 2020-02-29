@@ -1,0 +1,29 @@
+const utils = require("./build/utils");
+
+module.exports = {
+    pages: utils.getPages(),
+    // pages: {
+    //     index: {
+    //       entry: "src/pages/index/index.js",
+    //       template: "src/pages/index/index.html",
+    //       filename: "index.html"
+    //     },
+    //     page1: {
+    //       entry: "src/pages/page1/page1.js",
+    //       template: "src/pages/page1/page1.html",
+    //       filename: "page1.html"
+    //     },
+    //     view: {
+    //       entry: "src/pages/view/view.js",
+    //       template: "src/pages/view/view.html",
+    //       filename: "view.html"
+    //     },
+    //     viewx: {
+    //       entry: "src/pages/viewx/viewx.js",
+    //       template: "src/pages/viewx/viewx.html",
+    //       filename: "viewx.html"
+    //     }
+    //   },
+    //  解决打包之后静态文件路径404的问题
+    publicPath: './',
+}
